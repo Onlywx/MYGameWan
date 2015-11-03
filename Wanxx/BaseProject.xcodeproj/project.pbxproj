@@ -43,6 +43,9 @@
 		854C451B1BE83DBC00956584 /* ToolMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854C45031BE83DBC00956584 /* ToolMenuModel.m */; };
 		854C451C1BE83DBC00956584 /* ZBCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854C45051BE83DBC00956584 /* ZBCategoryModel.m */; };
 		854C451D1BE83DBC00956584 /* ZBItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854C45071BE83DBC00956584 /* ZBItemModel.m */; };
+		854C45261BE8495300956584 /* XMLYNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 854C45251BE8495300956584 /* XMLYNetManager.m */; };
+		854C45291BE849A700956584 /* DuoWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 854C45281BE849A700956584 /* DuoWanNetManager.m */; };
+		854C452C1BE849B200956584 /* TuWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 854C452B1BE849B200956584 /* TuWanNetManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +121,12 @@
 		854C45051BE83DBC00956584 /* ZBCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBCategoryModel.m; sourceTree = "<group>"; };
 		854C45061BE83DBC00956584 /* ZBItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBItemModel.h; sourceTree = "<group>"; };
 		854C45071BE83DBC00956584 /* ZBItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBItemModel.m; sourceTree = "<group>"; };
+		854C45241BE8495300956584 /* XMLYNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYNetManager.h; sourceTree = "<group>"; };
+		854C45251BE8495300956584 /* XMLYNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYNetManager.m; sourceTree = "<group>"; };
+		854C45271BE849A700956584 /* DuoWanNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanNetManager.h; sourceTree = "<group>"; };
+		854C45281BE849A700956584 /* DuoWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanNetManager.m; sourceTree = "<group>"; };
+		854C452A1BE849B200956584 /* TuWanNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanNetManager.h; sourceTree = "<group>"; };
+		854C452B1BE849B200956584 /* TuWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanNetManager.m; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +217,12 @@
 			children = (
 				3886C0BC1BD74AFE0014E661 /* BaseNetManager.h */,
 				3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */,
+				854C45271BE849A700956584 /* DuoWanNetManager.h */,
+				854C45281BE849A700956584 /* DuoWanNetManager.m */,
+				854C452A1BE849B200956584 /* TuWanNetManager.h */,
+				854C452B1BE849B200956584 /* TuWanNetManager.m */,
+				854C45241BE8495300956584 /* XMLYNetManager.h */,
+				854C45251BE8495300956584 /* XMLYNetManager.m */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -482,6 +497,7 @@
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				854C451C1BE83DBC00956584 /* ZBCategoryModel.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
+				854C452C1BE849B200956584 /* TuWanNetManager.m in Sources */,
 				854C45191BE83DBC00956584 /* RuneModel.m in Sources */,
 				854C451D1BE83DBC00956584 /* ZBItemModel.m in Sources */,
 				854C450F1BE83DBC00956584 /* GiftModel.m in Sources */,
@@ -495,6 +511,7 @@
 				854C450A1BE83DBC00956584 /* AlbumListModel.m in Sources */,
 				854C450B1BE83DBC00956584 /* RankingListModel.m in Sources */,
 				854C450D1BE83DBC00956584 /* BestGroupModel.m in Sources */,
+				854C45291BE849A700956584 /* DuoWanNetManager.m in Sources */,
 				854C45091BE83DBC00956584 /* TuWanModel.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
@@ -508,6 +525,7 @@
 				854C45101BE83DBC00956584 /* HeroChangeModel.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
 				854C450C1BE83DBC00956584 /* AllHeroModel.m in Sources */,
+				854C45261BE8495300956584 /* XMLYNetManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

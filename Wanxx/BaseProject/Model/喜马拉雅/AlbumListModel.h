@@ -9,6 +9,8 @@
 #import "BaseModel.h"
 
 @class AlbumAlbumModel,AlbumTracksModel,AlbumTracksListModel;
+
+
 @interface AlbumModel : BaseModel
 
 @property (nonatomic, strong) AlbumTracksModel *tracks;

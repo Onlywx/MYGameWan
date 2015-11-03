@@ -16,14 +16,17 @@ static AFHTTPSessionManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [AFHTTPSessionManager manager];
-        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", nil];
+// 此处添加了 @"text/plain"   这样才能够解析 喜马拉雅 第二个请求
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript",@"text/plain", nil];
     });
     return manager;
 }
 //http://cache.tuwan.com/app/?appid=1&class=heronews&mod=八卦&appid=1&appver=2.1
 /*
  URL的结构是？号之前是地址，？号之后是参数
- 
+ path:http://cache.tuwan.com/app/
+ params:@{@"appid":@1, @"class":@"heronews", @"mod":@"八卦", @"appver":@2.1}
+
 */
 
 
@@ -49,9 +52,6 @@ static AFHTTPSessionManager *manager = nil;
 
 
 + (id)GET:(NSString *)path parameters:(NSDictionary *)params completionHandler:(void(^)(id responseObj, NSError *error))complete{
-    
-    path = [self percentPathWithPath:path params:params];
-    
     //打印网络请求， DDLog  与  NSLog 功能一样
     DDLogVerbose(@"Request Path: %@, Params:%@", path, params);
     return [[self sharedAFManager] GET:path parameters:params success:^void(NSURLSessionDataTask * task, id responseObject) {

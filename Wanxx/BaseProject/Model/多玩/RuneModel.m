@@ -16,7 +16,7 @@
     return [propertyName firstCharUpper];
 }
 + (NSDictionary *)objectClassInArray{
-    return @{@"Purple" : [RunePurpleModel class], @"Yellow" : [RuneYellowModel class], @"Blue" : [RuneBlueModel class], @"Red" : [RuneRedModel class]};
+    return @{@"purple" : [RunePurpleModel class], @"yellow" : [RunePurpleModel class], @"blue" : [RunePurpleModel class], @"red" : [RunePurpleModel class]};
 }
 @end
 @implementation RunePurpleModel
@@ -27,18 +27,5 @@
 @end
 
 
-@implementation RuneYellowModel
-
-@end
-
-
-@implementation RuneBlueModel
-
-@end
-
-
-@implementation RuneRedModel
-
-@end
 
 

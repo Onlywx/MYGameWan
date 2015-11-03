@@ -8,18 +8,18 @@
 
 #import "BaseModel.h"
 
-@class HeroDetailBraum_QModel,HeroDetailBraum_RModel,HeroDetailBraum_WModel,HeroDetailBraum_BModel,HeroDetailBraum_EModel,HeroDetailLikeModel,HeroDetailHateModel;
+@class HeroDetailBraumModel,HeroDetailLikeModel,HeroDetailHateModel;
 @interface HeroDetailModel : BaseModel
 
 @property (nonatomic, copy) NSString *ratingAttack;
 
-@property (nonatomic, strong) HeroDetailBraum_WModel *Braum_W;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_W;
 //
 @property (nonatomic, copy) NSString *ID;
 
 @property (nonatomic, copy) NSString *healthLevel;
 
-@property (nonatomic, strong) HeroDetailBraum_QModel *Braum_Q;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_Q;
 
 @property (nonatomic, copy) NSString *quoteAuthor;
 
@@ -39,7 +39,7 @@
 
 @property (nonatomic, strong) NSArray<HeroDetailHateModel *> *hate;
 
-@property (nonatomic, strong) HeroDetailBraum_EModel *Braum_E;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_E;
 
 @property (nonatomic, copy) NSString *healthRegenBase;
 
@@ -83,7 +83,7 @@
 
 @property (nonatomic, copy) NSString *ratingDefense;
 
-@property (nonatomic, strong) HeroDetailBraum_BModel *Braum_B;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_B;
 
 @property (nonatomic, copy) NSString *tips;
 
@@ -93,7 +93,7 @@
 
 @property (nonatomic, copy) NSString *ratingMagic;
 
-@property (nonatomic, strong) HeroDetailBraum_RModel *Braum_R;
+@property (nonatomic, strong) HeroDetailBraumModel *Braum_R;
 
 @property (nonatomic, copy) NSString *moveSpeed;
 
@@ -106,7 +106,7 @@
 
 
 
-@interface HeroDetailBraum_QModel : NSObject
+@interface HeroDetailBraumModel : NSObject
 
 @property (nonatomic, copy) NSString *effect;
 
@@ -124,77 +124,6 @@
 
 @end
 
-@interface HeroDetailBraum_RModel : NSObject
-
-@property (nonatomic, copy) NSString *effect;
-
-@property (nonatomic, copy) NSString *cost;
-
-@property (nonatomic, copy) NSString *ID;
-
-@property (nonatomic, copy) NSString *cooldown;
-
-@property (nonatomic, copy) NSString *range;
-
-@property (nonatomic, copy) NSString *desc;
-
-@property (nonatomic, copy) NSString *name;
-
-@end
-
-@interface HeroDetailBraum_WModel : NSObject
-
-@property (nonatomic, copy) NSString *effect;
-
-@property (nonatomic, copy) NSString *cost;
-
-@property (nonatomic, copy) NSString *ID;
-
-@property (nonatomic, copy) NSString *cooldown;
-
-@property (nonatomic, copy) NSString *range;
-
-@property (nonatomic, copy) NSString *desc;
-
-@property (nonatomic, copy) NSString *name;
-
-@end
-
-@interface HeroDetailBraum_BModel : NSObject
-
-@property (nonatomic, copy) NSString *effect;
-
-@property (nonatomic, copy) NSString *cost;
-
-@property (nonatomic, copy) NSString *ID;
-
-@property (nonatomic, copy) NSString *cooldown;
-
-@property (nonatomic, copy) NSString *range;
-
-@property (nonatomic, copy) NSString *desc;
-
-@property (nonatomic, copy) NSString *name;
-
-@end
-
-@interface HeroDetailBraum_EModel : NSObject
-
-@property (nonatomic, copy) NSString *effect;
-
-@property (nonatomic, copy) NSString *cost;
-
-@property (nonatomic, copy) NSString *ID;
-
-@property (nonatomic, copy) NSString *cooldown;
-
-@property (nonatomic, copy) NSString *range;
-
-@property (nonatomic, copy) NSString *desc;
-
-@property (nonatomic, copy) NSString *name;
-
-@end
 
 @interface HeroDetailLikeModel : NSObject
 

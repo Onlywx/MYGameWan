@@ -26,4 +26,5 @@
 #import "AllHeroModel.h"
 #import "FreeHeroModel.h"
 
+
 #endif /* DuoWanModel_h */

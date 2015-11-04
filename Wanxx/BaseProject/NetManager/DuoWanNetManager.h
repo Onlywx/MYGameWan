@@ -67,7 +67,78 @@ typedef NS_ENUM(NSUInteger, HeroType) {
  */
 + (id)getHeroCZWithHeroName:(NSString *)enName kCompletionHandle;
 
+/**
+ *  获取英雄资料
+ *
+ *  @param enName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroDetailWithHeroName:(NSString *)enName kCompletionHandle;
 
 
+/**
+ *  获取英雄的天赋和符文
+ *
+ *  @param enName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroGiftAndRunWithHeroName:(NSString *)enName kCompletionHandle;
+
+/**
+ *  获取英雄改动后
+ *
+ *  @param enName 英雄英文名
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroChangeWithHeroName:(NSString *)enName kCompletionHandle;
+
+/**
+ *  获取一周
+ *
+ *  @param Id 英雄Id
+ *
+ *  @return 网络请求任务
+ */
++ (id)getHeroWeekDataWithHeroId:(NSInteger)heroId kCompletionHandle;
+
+/**
+ 获取游戏百科列表
+*/
++(id)getHeroToolMenuCompletionHandle:(void (^)(id, NSError *))completionHandle;
+/*获取装备分类*/
++(id)getHeroZBCategoryCompletionHandle:(void (^)(id, NSError *))completionHandle;
+
+/**
+ *  获取某分类装备列表
+ *
+ *  @param tag 分类tag
+ *
+ *  @return 
+ */
++ (id)getZBItemListWithTag:(NSString *)tag kCompletionHandle;
+
+/**
+ *  装备详情
+ *
+ *  @param itemId 装备id
+ *
+ *  @return 
+ */
++ (id)getZBDetailWithItemId:(NSInteger)itemId kCompletionHandle;
+
+/*获取天赋*/
++ (id)getGiftCompletionHandle:(void (^)(id, NSError *))completionHandle;
+
+/*获取符文*/
++ (id)getRunesCompletionHandle:(void (^)(id, NSError *))completionHandle;
+
+/*获取召唤师技能*/
++ (id)getSumAbilityCompletionHandle:(void (^)(id, NSError *))completionHandle;
+
+/*最佳阵容*/
++ (id)getBestGroupCompletionHandle:(void (^)(id, NSError *))completionHandle;
 
 @end

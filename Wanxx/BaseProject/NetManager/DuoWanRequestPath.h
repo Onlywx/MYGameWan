@@ -35,7 +35,7 @@
 #define kToolMenuPath @"http://box.dwstatic.com/apiToolMenu.php"
 //装备分类
 #define kZBCategoryPath @"http://lolbox.duowan.com/phone/apiZBCategory.php"
-//分类装备列表
+//分类装备列表      
 #define kZBItemListPath @"http://lolbox.duowan.com/phone/apiZBItemList.php"
 //装备详情
 #define kZBDetailPath @"http://lolbox.duowan.com/phone/apiItemDetail.php"

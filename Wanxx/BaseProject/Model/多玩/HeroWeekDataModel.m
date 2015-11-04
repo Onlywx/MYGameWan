@@ -17,22 +17,28 @@
     return @{@"charts" : [HeroWeekDataDataChartsModel class]};
 }
 
++ (NSString *)replacedKeyFromPropertyName121:(NSString *)propertyName{
+    return [propertyName underlineFromCamel];
+}
+
 @end
 
 
 @implementation HeroWeekDataDataChartsModel
 
 + (NSDictionary *)objectClassInArray{
-    return @{@"ratio_data" : [HeroWeekDataChartsRatio_Data class]};
+    return @{@"ratio_data" : [HeroWeekDataDataChartsRatioDataModel class]};
 }
+
 + (NSString *)replacedKeyFromPropertyName121:(NSString *)propertyName{
     return [propertyName underlineFromCamel];
 }
 @end
 
 
-@implementation HeroWeekDataChartsRatio_Data
+@implementation HeroWeekDataDataChartsRatioDataModel
 
 @end
+
 
 
